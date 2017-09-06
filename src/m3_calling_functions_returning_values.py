@@ -68,7 +68,7 @@ def test_sum_of_digits():
     print('       actual:  ', answer)
 
     # ------------------------------------------------------------------
-    # TO DO: 2 (continued).
+    # Done: 2 (continued).
     # Below this comment, add 3 more test cases of your own choosing.
     # ------------------------------------------------------------------
 
