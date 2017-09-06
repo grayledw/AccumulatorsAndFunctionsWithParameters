@@ -186,7 +186,10 @@ def digits_in_cube(n):
     ####################################################################
     # ------------------------------------------------------------------
 
-    
+    n = n ** 3
+    sum_of_digits(n)
+
+
 
 def test_digits_in_power():
     """ Tests the   digits_in_power   function. """
@@ -201,6 +204,22 @@ def test_digits_in_power():
     print('--------------------------------------------------')
     print('Testing the   digits_in_power   function:')
     print('--------------------------------------------------')
+
+    expected = 9
+    answer = digits_in_power(5,4)
+    print('Test 1 expected:', expected)
+    print('     actual:', answer)
+
+    expected1 = 1
+    answer1 =  digits_in_power(10,22)
+    print('Test 2 expected:', expected1)
+    print('     actual:', answer1)
+
+    expected2 = 17
+    answer2 =  digits_in_power(17,122)
+    print('Test 3 expected', expected2)
+    print('     actual:', answer2)
+
 
 
 def digits_in_power(n, k):
@@ -222,6 +241,10 @@ def digits_in_power(n, k):
     #    the    sum_of_digits    function that is DEFINED ABOVE.
     ####################################################################
     # ------------------------------------------------------------------
+
+    n = digits_in_power(n)
+    digits_in_cube(n)
+
 
 
 def test_fancy_sums_of_digits():
