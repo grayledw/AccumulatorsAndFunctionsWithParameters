@@ -4,8 +4,9 @@ in its simplest classic forms:
    SUMMING:       total = total + number
 
 Authors: David Mutchler, Valerie Galluzzi, Mark Hays, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         their colleagues and Derek Grayless.
+"""  # Done: 1. PUT YOUR NAME IN THE ABOVE LINE.
+import math
 
 
 def main():
@@ -29,6 +30,20 @@ def test_sum_cosines():
     print('Testing the   sum_cosines   function:')
     print('--------------------------------------------------')
 
+    expected = 1.540302
+    answer = sum_cosines(3)
+    print('Test 1 expected:', expected)
+    print('     actual:', answer)
+
+    expected1 = 1.124155
+    answer1 = sum_cosines(4)
+    print('Test 2 expected:', expected1)
+    print('     actual:', answer1)
+
+    expected2 = .724351
+    answer2 = sum_cosines(7)
+    print('Test 3 expected:', expected2)
+    print('     actual:', answer2)
 
 def sum_cosines(n):
     """
@@ -49,6 +64,12 @@ def sum_cosines(n):
     #   test cases; that would defeat the purpose of TESTING!
     # ------------------------------------------------------------------
 
+    # remember dont use sum as variable because there is a sum function in math
+    add = 0
+    for k in range(n):
+       add = add + math.cos(k)
+    return sum
+
 
 def test_sum_square_roots():
     """ Tests the   sum_square_roots   function. """
@@ -65,6 +86,20 @@ def test_sum_square_roots():
     print('Testing the   sum_square_roots   function:')
     print('--------------------------------------------------')
 
+    expected = 3.414213
+    answer = sum_square_roots(3)
+    print('Test 1 expected:', expected)
+    print('     actual:', answer)
+
+    expected1 = 5.863703
+    answer1 = sum_square_roots(4)
+    print()
+    print()
+
+    expected2 = 8.692130
+    answer2 =
+    print()
+    print()
 
 def sum_square_roots(n):
     """
