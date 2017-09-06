@@ -151,6 +151,20 @@ def test_digits_in_cube():
     print('Testing the   digits_in_cube   function:')
     print('-----------------------------------------------------')
 
+    expected = 9
+    answer = digits_in_cube(3)
+    print('Test 1 expected:', expected)
+    print('     actual:', answer)
+
+    expected1 = 10
+    answer1 = digits_in_cube(4)
+    print('Test 2 expected:', expected1)
+    print('     actual:', answer1)
+
+    expected2 = 9
+    answer2 = digits_in_cube(5)
+    print('Test 3 expected:', expected2)
+    print('     acutual:', answer2)
 
 def digits_in_cube(n):
     """
@@ -172,6 +186,7 @@ def digits_in_cube(n):
     ####################################################################
     # ------------------------------------------------------------------
 
+    
 
 def test_digits_in_power():
     """ Tests the   digits_in_power   function. """
