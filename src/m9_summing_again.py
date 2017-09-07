@@ -121,7 +121,7 @@ def sum_powers_in_range(m, n, p):
         add = (add + (k**p))
     return add
     # ------------------------------------------------------------------
-    # TODO: 5. Implement and test this function.
+    # Done: 5. Implement and test this function.
     #   Note that you should write its TEST function first (above).
     #
     #   No fair running the code of  sum_powers_in_range  to GENERATE
