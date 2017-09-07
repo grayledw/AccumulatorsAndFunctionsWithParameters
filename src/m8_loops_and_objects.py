@@ -10,6 +10,7 @@ Authors: David Mutchler, Valerie Galluzzi, Mark Hays, Amanda Stouder,
 """  # Done: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 import rosegraphics as rg
+import math
 
 
 def main():
@@ -21,6 +22,7 @@ def main():
     draw_circles2()
     print_sequence3()
     draw_circles3()
+    print_cosines()
 
 def print_sequence1():
 
@@ -211,8 +213,12 @@ def print_cosines():
        3.185670431451112
        68.9855097830147
     """
+
+    for k in range(0,101,1):
+        x = math.cos(k)*80
+        print(x)
     # ------------------------------------------------------------------
-    # TODO: 8. Implement this function, per its doc-string above.
+    # Done: 8. Implement this function, per its doc-string above.
     # Put a statement in  main  to test this function.
     # REQUIREMENT: You must use a   RANGE  statement to solve this problem.
     #
