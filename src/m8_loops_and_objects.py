@@ -153,7 +153,7 @@ def print_sequence3():
       100.
     """
     # ------------------------------------------------------------------
-    # TODO: 6. Implement this function, per its doc-string above.
+    # Done : 6. Implement this function, per its doc-string above.
     # Put a statement in  main  to test this function.
     # REQUIREMENT: You must use a   RANGE  statement to solve this problem.
     # ------------------------------------------------------------------
@@ -173,7 +173,7 @@ def draw_circles3():
     -- Waits for the user to press the mouse, then closes the window.
     """
     # ------------------------------------------------------------------
-    # TODO: 7. Implement this function, per its doc-string above.
+    # Done: 7. Implement this function, per its doc-string above.
     # Put a statement in  main  to test this function.
     # REQUIREMENT: You must use a   RANGE  statement to solve this problem.
     # ------------------------------------------------------------------
