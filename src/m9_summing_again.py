@@ -12,6 +12,7 @@ def main():
     """ Calls the   TEST   functions in this module. """
     test_sum_powers()
     test_sum_powers_in_range()
+    sum_powers()
 
 
 def test_sum_powers():
@@ -29,6 +30,20 @@ def test_sum_powers():
     print('Testing the   sum_powers   function:')
     print('--------------------------------------------------')
 
+    expected = 7.979928052
+    answer = sum_powers(6, .25)
+    print('Test 1 expected:', expected)
+    print('     actual:', answer)
+
+    expected1 = 3.80826
+    answer1 = sum_powers(5, -.3)
+    print('Test 2 expected:', expected1)
+    print('     actual:', answer1)
+
+    expected2 = 144.45655
+    answer2 = sum_powers(100,.1)
+    print('Test 3 expected:', expected2)
+    print('     actual:', answer2)
 
 def sum_powers(n, p):
     """
@@ -42,6 +57,13 @@ def sum_powers(n, p):
       -- sum_powers(5, -0.3) returns about 3.80826
       -- sum_powers(100, 0.1) returns about 144.45655
     """
+
+    for k in range(1, n):
+        add = 0
+        add = k**p
+        return add
+
+
     # ------------------------------------------------------------------
     # TODO: 3. Implement and test this function.
     #   Note that you should write its TEST function first (above).
