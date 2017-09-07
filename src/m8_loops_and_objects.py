@@ -18,6 +18,9 @@ def main():
     print_sequence1()
     draw_circles1()
     print_sequence2()
+    draw_circles2()
+    print_sequence3()
+    draw_circles3()
 
 def print_sequence1():
 
@@ -111,8 +114,25 @@ def draw_circles2():
                (50, 100)   (70, 100)   (90, 100)  (110, 100) ... (390, 100)
     -- Waits for the user to press the mouse, then closes the window.
     """
+
+    window = rg.RoseWindow(400, 400)
+    center = rg.Point(50, 100)
+
+    for k in range(50,391,20):
+        center = rg.Point(k, 100)
+        circle = rg.Circle(center, 10)
+        circle.fill_color = 'blue'
+        circle.attach_to(window)
+        window.render()
+
+
+
+    window.close_on_mouse_click()
+
+
+
     # ------------------------------------------------------------------
-    # TODO: 5. Implement this function, per its doc-string above.
+    # Done: 5. Implement this function, per its doc-string above.
     # Put a statement in  main  to test this function.
     # REQUIREMENT: You must use a   RANGE  statement to solve this problem.
     # ------------------------------------------------------------------
@@ -141,7 +161,8 @@ def print_sequence3():
     print('--------------------------------------------------')
     print('Running print_sequence3:')
     print('--------------------------------------------------')
-
+    for k in range(1,101,1):
+        print(k)
 
 def draw_circles3():
     """
@@ -156,6 +177,16 @@ def draw_circles3():
     # Put a statement in  main  to test this function.
     # REQUIREMENT: You must use a   RANGE  statement to solve this problem.
     # ------------------------------------------------------------------
+
+    window = rg.RoseWindow(300, 300)
+
+    for k in range(1, 101, 1):
+        center = rg.Point(200, 150)
+        circle = rg.Circle(center, k+1)
+        circle.attach_to(window)
+        window.render()
+
+    window.close_on_mouse_click()
     print()
     print('--------------------------------------------------')
     print('Running draw_circles3:  See graphics window')
